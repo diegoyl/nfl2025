@@ -1,38 +1,135 @@
+:root {
+  --cPurp: #2d0b35;
+  --cPurpHighlight: #c041e1;
+  --cPurp2: #531164;
+  --cPurpField: #592b65;
+  --cRed: #ff4142;
+  --cYellow: #ccff5f;
+  --cWhite: #faf7f9;
+  --cOffWhite: #e2d5e6;
+  --cOfferWhite: #a18ca7;
+
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: Mainfont;
+  background-color: var(--cPurp);
+  color: var(--cWhite);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+@font-face {
+  font-family: Mainfont;
+  src: url(../public/MartianMono-VariableFont_wdth\,wght.ttf);
+  font-stretch: 90%;
+  font-weight: 500;
+}
+@font-face {
+  font-family: MainfontVariable;
+  src: url(../public/MartianMono-VariableFont_wdth\,wght.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: MainfontThin;
+  src: url(../public/MartianMono-VariableFont_wdth\,wght.ttf);
+  font-stretch: 75%;
+  font-weight: 300;
+}
+@font-face {
+  font-family: Displayfont;  
+  src: url(../public/MartianMono-VariableFont_wdth\,wght.ttf);
+  font-weight: bolder;
+  font-stretch: 112%;
+  font-weight: 900;
+}
+@font-face {
+  font-family: Monofont;
+  src: url(../public/FragmentMono-Regular.ttf);
+
+}
+@font-face {
+  font-family: Monofont-Italic;
+  src: url(../public/FragmentMono-Italic.ttf);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  font-family: MainfontVariable;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#title {
+  font-size: 2em;
+  font-family: MainfontVariable;
+  font-weight: 900;
+  font-stretch: 1000%;
+  color: var(--cPurpHighlight);
+  background-color: var(--cPurp);
+  /* background-color: rgba(255, 0, 0, 0.196); */
+  height: 2em;
+  line-height: 2em;
+  padding: 0;
+  position: sticky;
+  top:0;
+  margin-top: 10vh;
+}
+
+.makePreds {
+  height: 3em;
+  width: 80%;
+  /* margin: 2.5%; */
+  font-size: 1.8em;
+  /* line-height: 1em; */
+
+  font-weight: bold;
+
+  background-color: var(--cPurpHighlight);
+  /* outline: var(--cPurpHighlight) 4px solid; */
+  color: var(--cWhite);
+  border-radius: 20px;
+}
+.picksClosed {
+  font-size: 1em;
+  height: 4em;
+  background-color: var(--cPurpField);
+  color: var(--cPurp);
+  opacity: .7;
+}
+
+.loadFormFlash {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  background-color: var(--cPurpHighlight);
+}
+.loadFlashActive {
+  z-index: 1000;
+  animation: loadFlash .8s;
+  animation-iteration-count: 1;
+}
+
+@keyframes loadFlash {
+    30% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
