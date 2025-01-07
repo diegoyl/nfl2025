@@ -7,18 +7,9 @@ import Loading from './Loading.js';
 import PostSubmit from './PostSubmit.js';
 import UserDropdown from './UserDropdown.js';
 import HelpPage from './HelpPage.js';
+import dbData from './dbData.js';
+const defaultSD = dbData["defaultSD"]
 
-
-const defaultSD = {
-    // "DETGB": ["home/away","td1_idx","td2_idx"],
-    "g1": [null, null, null],
-    "g2": [null, null, null],
-    "g3": [null, null, null],
-    "g4": [null, null, null],
-    "g5": [null, null, null],
-    "g6": [null, null, null],
-    "user":null
-}
 
 function Form({gameDict, formActive}) {
     // var [gameDict, setGameDict] = useState(gameDict)
@@ -184,7 +175,7 @@ function Form({gameDict, formActive}) {
             
             
 
-            <div id="navButtons">
+            <div className="navButtons">
 
                 <div id="leftNav" className="navButtonHalf">
                     {formPage <= 0 ? ( <></> ) : (
@@ -203,14 +194,20 @@ function Form({gameDict, formActive}) {
                     {formPage === lastPageNum ? ( 
                         <button id="finishButton" 
                         onClick={() => {setFinish(true)}}
-                        >FINISH</button>
+                        >FINISH!</button>
                     ) : (<></>)}
                 </div>
 
             </div>
 
 
-            <SubmitForm submitForm={submitForm} setFinish={setFinish} finish={finish}></SubmitForm>
+            <SubmitForm 
+                submitForm={submitForm} 
+                setFinish={setFinish} 
+                finish={finish} 
+                selectionsDict={selectionsDict}
+                gameDict={gameDict}
+            ></SubmitForm>
 
             {/* {finish ? ( 
                 <SubmitForm submitForm={submitForm} setFinish={setFinish} finish={finish}></SubmitForm>
