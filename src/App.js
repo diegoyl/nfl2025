@@ -41,6 +41,8 @@ function App() {
       <div id="loadFormFlash" 
         className={formLoading ? "loadFlashActive loadFormFlash":"loadFormFlash"}>
       </div>
+      
+      <div style={{height:"3em"}}></div>
 
       {picksOpen ? (
           <button className="makePreds" 
