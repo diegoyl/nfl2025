@@ -25,6 +25,7 @@ function App() {
   const vars = "temp"
   const gameDict = dbData["gameDict"]
   const picksOpen = dbData["picksOpen"]
+  const standingsArr = dbData["standingsArr"]
 
 
 
@@ -36,13 +37,10 @@ function App() {
       <p id="title">
         QUINIELA 2025
       </p>
-      <br></br><br></br><br></br><br></br><br></br>
-
 
       <div id="loadFormFlash" 
         className={formLoading ? "loadFlashActive loadFormFlash":"loadFormFlash"}>
       </div>
-
 
       {picksOpen ? (
           <button className="makePreds" 
@@ -50,11 +48,11 @@ function App() {
           >Make Picks</button>      
       ) : ( <></>)}
 
-<br></br><br></br><br></br><br></br><br></br>
+      <div style={{height:"3em"}}></div>
 
-      <Standings vars={vars}></Standings>
+      <Standings standingsArr={standingsArr}></Standings>
 
-      <CurrentGameTable vars={vars}></CurrentGameTable>
+      {/* <CurrentGameTable vars={vars}></CurrentGameTable> */}
 
 
       
