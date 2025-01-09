@@ -37,11 +37,11 @@ function ReviewRow({game_picks, gameDict}) {
                 mlPts = game_data["ML"][mlSide]
                 mlCodeClass = game_data["team_code"][mlSide]
             }
-            if (tdhPick){
+            if (tdhPick != null){
                 tdhName = game_data["TD"]["home"][tdhPick][1]
                 tdhPts = game_data["TD"]["home"][tdhPick][2]
             }
-            if (tdaPick){
+            if (tdaPick != null){
                 tdaName = game_data["TD"]["away"][tdaPick][1]
                 tdaPts = game_data["TD"]["away"][tdaPick][2]
             }
