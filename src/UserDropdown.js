@@ -31,12 +31,12 @@ function UserDropdown({updateUser, formActive}) {
                 </button>
                 {true && (
                     <ul className="dropdown-menu">
-                    <li onClick={() => handleItemClick('Ana Paula')}>Ana Paula</li>
-                    <li onClick={() => handleItemClick('Andres')}>Andres</li>
-                    <li onClick={() => handleItemClick('Fabian')}>Fabian</li>
-                    <li onClick={() => handleItemClick('Diego')}>Diego</li>
-                    <li onClick={() => handleItemClick('Mami')}>Mami</li>
-                    <li onClick={() => handleItemClick('Papi')}>Papi</li>
+                    <li onClick={() => handleItemClick('ANA PAULA')}>ANA PAULA</li>
+                    <li onClick={() => handleItemClick('ANDRES')}>ANDRES</li>
+                    <li onClick={() => handleItemClick('FABIAN')}>FABIAN</li>
+                    <li onClick={() => handleItemClick('DIEGO')}>DIEGO</li>
+                    <li onClick={() => handleItemClick('MAMI')}>MAMI</li>
+                    <li onClick={() => handleItemClick('PAPI')}>PAPI</li>
                     </ul>
                 )}
             </div>

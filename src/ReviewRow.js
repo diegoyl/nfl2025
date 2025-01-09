@@ -4,7 +4,7 @@ import './Form.css';
 
 
 function ReviewRow({game_picks, gameDict}) {
-    console.log("Game Picks: ",game_picks)
+    // console.log("Game Picks: ",game_picks)
     const game_id = game_picks[0]
 
     const mlPick = game_picks[1][0]
@@ -47,7 +47,7 @@ function ReviewRow({game_picks, gameDict}) {
             }
         }
     }
-    console.log("Game Data: ",game_data)
+    // console.log("Game Data: ",game_data)
 
     return (
         <div className="reviewRowContainer">

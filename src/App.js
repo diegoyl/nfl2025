@@ -3,6 +3,7 @@ import './App.css';
 import CurrentGameTable from './CurrentGameTable.js';
 import Standings from './Standings.js';
 import Form from './Form.js';
+import ViewPicks from './ViewPicks.js';
 import dbData from './dbData.js';
 // console.log("var1: ",dbData["var1"])
 
@@ -26,7 +27,8 @@ function App() {
   const gameDict = dbData["gameDict"]
   const picksOpen = dbData["picksOpen"]
   const standingsArr = dbData["standingsArr"]
-
+  
+  
 
 
 ////////////////////////////////////////////////////////////
@@ -41,7 +43,7 @@ function App() {
       <div id="loadFormFlash" 
         className={formLoading ? "loadFlashActive loadFormFlash":"loadFormFlash"}>
       </div>
-      
+
       <div style={{height:"3em"}}></div>
 
       {picksOpen ? (
@@ -49,6 +51,8 @@ function App() {
           onClick={() => handlePredsClick()}
           >Make Picks</button>      
       ) : ( <></>)}
+
+      {/* <ViewPicks ></ViewPicxks> */}
 
       <div style={{height:"3em"}}></div>
 

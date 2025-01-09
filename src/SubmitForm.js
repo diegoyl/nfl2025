@@ -6,7 +6,7 @@ import ReviewRow from './ReviewRow.js';
 function SubmitForm({submitForm, setFinish, finish, selectionsDict, gameDict}) {
 
     // do stuff with props
-    console.log("\n\n========\nSD in submit: ",selectionsDict)
+    // console.log("\n\n========\nSD in submit: ",selectionsDict)
 
     let missingPicks = false;
 

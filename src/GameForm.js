@@ -160,13 +160,15 @@ function GameForm({game_data, selections, updateSelections, triggerFlash}) {
                        <strong>* * * TD Notes * * *</strong>
                     </p>
                     <p>
-                        * No points are awarded for Passing TDs, QBs can still be awarded for Rushing or Receiving TDs
+                        * Passing TDs do not count, but QBs can still score 
+                        with Rushing/Receiving TDs.
                     </p>
                     <p>
-                        * D/ST = Defense/Special Teams (points are awarded for Defensive TD or Kick/Punt Return TD)
+                        * D/ST = Defense/Special Teams (points are awarded for 
+                        Defensive TD or Kick/Punt Return TD)
                     </p>
                     <p>
-                        * Player is only awarded points one time (no additional points are awarded for scoring more than 1 TD)
+                        * The same player scoring more than one TD does not give you additional points
                     </p>
                 </div>
 

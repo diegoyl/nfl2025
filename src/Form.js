@@ -109,6 +109,8 @@ function Form({gameDict, formActive}) {
         setFormPage(newPageNum)
         console.log("new page num: ",newPageNum)
         console.log("formPage: ",formPage)
+        // console.log("ScTp: ",document.getElementsByClassName("formContainer").scrollTop);
+        document.getElementById("formScroller").scroll(0,0)
 
     }
 
@@ -131,7 +133,7 @@ function Form({gameDict, formActive}) {
     // }, [formPage]);
     
     return (
-        <div className="formContainer">
+        <div id="formScroller" className="formContainer">
             <div id="flash1" 
                 className={flashActive[0] ? flashActive[1]+" flashActive flash":"flash"}>
             </div>
