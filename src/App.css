@@ -82,7 +82,7 @@ button {
   top:0;
   margin: 0;
   margin-top: 10vh;
-  text-shadow: 0px 0px 8px rgba(242, 67, 255,.5);
+  text-shadow: 0px 0px .3em rgba(245, 99, 255, 0.5);
   background: linear-gradient(180deg, rgba(45,11,53,1) 0%, rgba(45,11,53,1) 57%, rgba(45,11,53,0) 100%);
 
 }
