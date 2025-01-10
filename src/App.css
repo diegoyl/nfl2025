@@ -73,28 +73,40 @@ button {
   font-stretch: 1000%;
   color: var(--cPurpHighlight);
   background-color: var(--cPurp);
+  /* background-color: black; */
   /* background-color: rgba(255, 0, 0, 0.196); */
-  height: 2em;
-  line-height: 2em;
+  height: 4.5em;
+  line-height: 2.8em;
   padding: 0;
   position: sticky;
   top:0;
+  margin: 0;
   margin-top: 10vh;
+  text-shadow: 0px 0px 8px rgba(242, 67, 255,.5);
+  background: linear-gradient(180deg, rgba(45,11,53,1) 0%, rgba(45,11,53,1) 57%, rgba(45,11,53,0) 100%);
+
 }
 
-.makePreds {
-  height: 3em;
+.mainButton {
+  /* height: 3em; */
   width: 80%;
   /* margin: 2.5%; */
-  font-size: 1.8em;
+  padding: .7em 1.2em;
+  font-size: 1.5em;
   /* line-height: 1em; */
+  display: block;
+  width: auto;
 
   font-weight: bold;
 
   background-color: var(--cPurpHighlight);
   /* outline: var(--cPurpHighlight) 4px solid; */
   color: var(--cWhite);
-  border-radius: 20px;
+  border-radius: 10px;
+  margin: 1.5em auto;
+}
+.makeButton {
+  margin-top: .5em;
 }
 .picksClosed {
   font-size: 1em;

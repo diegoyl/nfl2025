@@ -2,6 +2,7 @@
     /* outline: red 2px dashed; */
     width: 80%;
     margin: 0 auto;
+    max-width: 400px;
 }
 .sRow {
     /* outline: yellow 1px dashed; */

@@ -87,3 +87,107 @@
     font-weight: 900;
     color: rgb(255, 0, 132);
 }
+
+
+
+/* // VIEW PICKS */
+.viewContainer {
+    background-color: var(--cPurp);
+    z-index: 1222;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin: 0;
+  
+    overflow: scroll;
+    text-align: center;
+  
+    font-family: Mainfont;
+    transition: top 1s ease-out;
+}
+.dropdown .viewDropButton {
+    background-color: var(--cPurpField);
+    color: white;
+    /* width: 30%; */
+    margin-top: 4vh;
+    margin-right: 1.5em;
+    white-space: nowrap;
+}
+.viewHomeButton {
+    /* width: 5em; */
+    position: fixed;
+    top: 1.02em;
+    left: 1em;
+    font-size: 2em;
+    z-index: 5000;
+    padding: .06em .5em;
+    background-color: var(--cPurpField);
+    color: var(--cPurpHighlight);
+    font-weight: 900;
+    border-radius: 8px;
+    z-index: 150;
+
+}
+.dropdown .viewHomeButton {
+    /* width: 2em; */
+    font-size: .9em;
+}
+.dropdownViewPicks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    /* width: 100%; */
+    background: linear-gradient(180deg, rgba(45,11,53,1) 0%, rgba(45,11,53,1) 75%, rgba(45,11,53,0) 100%);
+    height: 7em;
+}
+
+.rrcView {
+    /* background-color: var(--cPurpField); */
+    /* background-color: red; */
+    margin: .8em auto;
+    outline: rgba(0, 0, 0, 0.3) 2px solid;
+    border-radius: var(--revCorner);
+}
+.rrcView .fullCol {
+    /* background-color: var(--cPurpField);
+    border-bottom: var(--cPurp) 1px solid; */
+
+}
+
+.corP {
+    color: rgb(37, 255, 153);
+    text-shadow: 0px 0px 6px rgba(37, 255, 153,.5);  
+}
+.incorP {
+    color: var(--cRed);
+    text-shadow: 0px 0px 6px rgba(255, 37, 81, 0.8);  
+    /* text-decoration: line-through; */
+}
+.roundTitle {
+    color: var(--cPurpHighlight);
+    font-weight: bold;
+    font-size: .8em;
+    margin-top: 4em;
+}
+.firstRT {
+    margin-top: 10em;
+}
+.viewContainer .dropdown {
+    text-align: right;
+}
+
+.dropdownViewPicks li {
+    z-index: 152;
+}
+.shadowDiv {
+    box-shadow: 0px 240px 20000px 230px var(--cPurp);   
+    z-index: 151;
+    height: 0;
+
+
+}

@@ -10,6 +10,7 @@ import dbData from './dbData.js';
 function App() {
   var [formLoading, setFormLoading] = useState(false)
   var [formActive, setFormActive] = useState(false)
+  var [viewActive, setViewActive] = useState(false)
 
   useEffect(() => {
     console.log('1. UseEffect Initializing...')
@@ -22,11 +23,15 @@ function App() {
       setFormActive(true)
     },350)
   }
-
+  function handleVPClick(state) {
+    setViewActive(state)
+  }
+  
   const vars = "temp"
   const gameDict = dbData["gameDict"]
   const picksOpen = dbData["picksOpen"]
   const standingsArr = dbData["standingsArr"]
+  const picksArchiveDict = dbData["picksArchiveDict"]
   
   
 
@@ -44,17 +49,24 @@ function App() {
         className={formLoading ? "loadFlashActive loadFormFlash":"loadFormFlash"}>
       </div>
 
-      <div style={{height:"3em"}}></div>
+      {/* <div style={{height:".1em"}}></div> */}
 
       {picksOpen ? (
-          <button className="makePreds" 
+          <button className="mainButton makeButton" 
           onClick={() => handlePredsClick()}
           >Make Picks</button>      
       ) : ( <></>)}
 
-      {/* <ViewPicks ></ViewPicxks> */}
 
-      <div style={{height:"3em"}}></div>
+      <button className="mainButton viewButton"
+          onClick={() => handleVPClick(true)}
+          >View Picks</button>    
+
+      {viewActive ? (
+          <ViewPicks picksArchiveDict={picksArchiveDict} handleVPClick={handleVPClick}></ViewPicks>    
+      ) : ( <></>)}
+
+      <div style={{height:"1.5em"}}></div>
 
       <Standings standingsArr={standingsArr}></Standings>
 

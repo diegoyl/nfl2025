@@ -476,8 +476,10 @@
     position: relative;
     display: inline-block;
     vertical-align: top;
-    width: 80%;
+    width: 100%;
+    max-width: 500px;
     transition: opacity 1s .1s ease-in-out;
+
 }
   
 .dropdown button {
@@ -498,6 +500,7 @@
   
 .dropdown-menu {
     z-index: 13;
+    text-align: center;
 
     display: block;
     position: absolute;
