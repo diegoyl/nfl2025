@@ -11,12 +11,12 @@ const defaultSD = {
 }
 
 const standingsArr = [
-	{'name':'DIEGO','pts':'36','win':'0','td':'36'},
 	{'name':'ANA PAULA','pts':'0','win':'0','td':'0'},
 	{'name':'MAMI','pts':'0','win':'0','td':'0'},
 	{'name':'PAPI','pts':'0','win':'0','td':'0'},
 	{'name':'FABIAN','pts':'0','win':'0','td':'0'},
 	{'name':'ANDRES','pts':'0','win':'0','td':'0'},
+	{'name':'DIEGO','pts':'0','win':'0','td':'0'},
 ]
 
 const gameDict = [
@@ -52,3 +52,4 @@ const dbData = {
 }
 
 export default dbData;
+
