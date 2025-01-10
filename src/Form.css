@@ -465,6 +465,9 @@
 .helpInstruction {
     font-family: Monofont;
     font-size: 1em;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2em;
 }
 .purpleQ {
     color: var(--cPurpHighlight);

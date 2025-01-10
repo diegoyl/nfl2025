@@ -27,11 +27,13 @@ function App() {
     setViewActive(state)
   }
   
-  const vars = "temp"
+
   const gameDict = dbData["gameDict"]
   const picksOpen = dbData["picksOpen"]
   const standingsArr = dbData["standingsArr"]
   const picksArchiveDict = dbData["picksArchiveDict"]
+  const curGameIdx = dbData["curGameIdx"]
+  const curGameIdxRound = dbData["curGameIdxRound"]
   
   
 
@@ -70,7 +72,7 @@ function App() {
 
       <Standings standingsArr={standingsArr}></Standings>
 
-      {/* <CurrentGameTable vars={vars}></CurrentGameTable> */}
+      <CurrentGameTable cur_game_data={gameDict[curGameIdxRound]} curGameIdx={curGameIdx} picksArchiveDict={picksArchiveDict}></CurrentGameTable>
 
 
       
