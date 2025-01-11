@@ -241,12 +241,12 @@
     /* outline: var(--cPurpHighlight) 2px solid; */
     box-shadow: 0px 0px 1em rgb(242, 67, 255);
 
-    font-family: Displayfont;
+    font-family: MainfontVariable;
+    font-style: 105%;
     font-weight: 900!important;
     font-size: 1.1em;
     border-radius: var(--revCorner);
     margin-bottom: 2.5em;
-
 }
 .matchupHalf {
     width: 50%;

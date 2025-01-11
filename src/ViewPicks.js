@@ -6,7 +6,7 @@ import './Form.css';
 
 function ViewPicks({picksArchiveDict, handleVPClick}) {
     const [isOpen, setIsOpen] = useState(false);
-    const [curViewUser, setCurViewUser] = useState("DIEGO");
+    const [curViewUser, setCurViewUser] = useState("ANA PAULA");
     const [curUserPicks, setCurUserPicks] = useState(picksArchiveDict[curViewUser]);
     console.log("\n\npicksArchiveDict: ", picksArchiveDict)
     console.log("\ncurUserPicks: ", curUserPicks)
