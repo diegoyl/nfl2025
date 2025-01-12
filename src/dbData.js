@@ -38,7 +38,7 @@ const picksArchiveDict = {
 }
 
 const curGameIdx = 1
-const curGameIdxRound = 0
+const curGameIdxRound = 1
 
 // EXPORT ARRAY
 const dbData = {
@@ -52,3 +52,4 @@ const dbData = {
 }
 
 export default dbData;
+
