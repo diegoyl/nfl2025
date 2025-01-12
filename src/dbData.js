@@ -52,4 +52,3 @@ const dbData = {
 }
 
 export default dbData;
-
