@@ -507,7 +507,9 @@
 
     display: block;
     position: absolute;
-    font-family: Displayfont;
+    font-family: MainfontVariable;
+    font-weight: 900;
+    font-stretch: 105%;
     font-size: 1.2em;
     width:70%;
     margin: 0 15%;
@@ -524,8 +526,10 @@
     list-style-type: none;
     /* outline: var(--cPurp2) 2px solid; */
     font-family: 'Courier New', Courier, monospace;
-    font-family: Displayfont;
-    font-weight: 900!important;
+    
+    font-family: MainfontVariable;
+    font-weight: 900;
+    font-stretch: 112%;
 
     background-color: var(--cPurpField);
     margin: 8px 0;
@@ -596,7 +600,7 @@
     color: #bd1a36;
 }
 .KC {
-    background-color: #E31837;
+    background-color: #ce112e;
     color: #ffc445;
 }
 .LAC {
@@ -630,10 +634,11 @@
 
 /* TEAM COLORS FOR FLASHING */
 .BALflash {
-    background-color: #422ec3;
+    background-color: #562ec3;
 }
 .BUFflash {
     background-color: #0049c7;
+    background-color: #d91b41;
 }
 .DENflash {
     background-color: #ff6b26;
@@ -649,6 +654,7 @@
 }
 .KCflash {
     background-color: #E31837;
+    background-color: #ffd20b;
 }
 .LACflash {
     background-color: #33adf8;
@@ -738,7 +744,11 @@
   }
   .helpContainer .subtitle {
     font-size: 1.5em;
-    font-family: Displayfont;
+
+    font-family: MainfontVariable;
+    font-weight: 900;
+    font-stretch: 105%;
+
     text-align: center;
   }
 
