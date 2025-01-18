@@ -168,7 +168,7 @@ function GameForm({game_data, selections, updateSelections, triggerFlash}) {
                         Defensive TD or Kick/Punt Return TD)
                     </p>
                     <p>
-                        * The same player scoring more than one TD does not give you additional points
+                        * The same player scoring more than one TD does not give you additional points. Except for options that say "2+", which will award points if the player scores at least 2 TDs in the game
                     </p>
                 </div>
 
