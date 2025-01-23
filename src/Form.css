@@ -638,7 +638,7 @@
 }
 .BUFflash {
     background-color: #0049c7;
-    background-color: #d91b41;
+    /* background-color: #d91b41; */
 }
 .DENflash {
     background-color: #ff6b26;
@@ -654,7 +654,7 @@
 }
 .KCflash {
     background-color: #E31837;
-    background-color: #ffd20b;
+    /* background-color: #ffd20b; */
 }
 .LACflash {
     background-color: #33adf8;
