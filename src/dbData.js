@@ -16,8 +16,8 @@ const standingsArr = [
 ]
 
 const gameDict = [
-	{'game_id':'g11','team_code':{'home':'PHI','away':'WAS'},'team_name':{'home':'EAGLES','away':'COMMANDERS'},'ML':{'home':55,'away':145},'TD':{'home':[['RB','S.Barkley',13],['QB','J.Hurts',18],['WR','A.Brown',27],['WR','D.Smith',33],['TE','D.Goedert',46],['D/ST','Eagles D/ST',90],['WR','J.Dotson',159],['RB','K.Gainwell',136],['TE','G.Calcaterra',263],['WR','A.Smith',297],['RB','2+ Barkley',35],['RB','3+ Barkley',148],['QB','2+ Hurts',67],['WR','2+ Brown',159],['WR','2+ Smith',228],],'away':[['WR','T.McLaurin',26],['QB','J.Daniels',33],['RB','B.Robinson',30],['RB','A.Ekeler',47],['TE','Z.Ertz',43],['WR','O.Zaccheaus',70],['WR','D.Brown',56],['D/ST','Commanders D/ST',125],['RB','J.McNichols',263],['WR','2+ McLaurin',171],['QB','2+ Daniels',240],['RB','2+ Robinson',194],]},},
-	{'game_id':'g12','team_code':{'home':'KC','away':'BUF'},'team_name':{'home':'CHIEFS','away':'BILLS'},'ML':{'home':92,'away':108},'TD':{'home':[['TE','T.Kelce',24],['RB','I.Pacheco',36],['WR','X.Worthy',35],['QB','P.Mahomes',90],['RB','K.Hunt',26],['WR','M.Brown',44],['WR','D.Hopkins',67],['TE','N.Gray',96],['WR','J.Watson',194],['D/ST','Chiefs D/ST',125],['WR','J.Smith-Schuster',125],['RB','S.Perine',136],['TE','2+ Kelce',148],['RB','2+ Hunt',159],['WR','2+ Worthy',263],],'away':[['QB','J.Allen',21],['RB','J.Cook',26],['WR','K.Shakir',42],['WR','K.Coleman',56],['TE','D.Kincaid',52],['WR','M.Hollins',102],['WR','A.Cooper',90],['RB','R.Davis',119],['RB','T.Johnson',159],['D/ST','Bills D/ST',125],['TE','D.Knox',125],['WR','C.Samuel',148],['RB','2+ Cook',159],['QB','2+ Allen',125],]},},
+	{'game_id':'g11','team_code':{'home':'PHI','away':'WAS'},'team_name':{'home':'EAGLES','away':'COMMANDERS'},'ML':{'home':55,'away':145},'TD':{'home':[['RB','S.Barkley',13],['QB','J.Hurts',18],['WR','A.Brown',26],['WR','D.Smith',33],['TE','D.Goedert',50],['D/ST','Eagles D/ST',90],['WR','J.Dotson',153],['RB','K.Gainwell',136],['TE','G.Calcaterra',263],['RB','2+ Barkley',34],['RB','3+ Barkley',148],['RB','4+ Barkley',500],['QB','2+ Hurts',73],['WR','2+ Brown',182],['WR','2+ Smith',251],],'away':[['WR','T.McLaurin',26],['RB','B.Robinson',33],['QB','J.Daniels',37],['TE','Z.Ertz',47],['RB','A.Ekeler',56],['WR','D.Brown',58],['WR','O.Zaccheaus',80],['WR','J.Crowder',115],['D/ST','Commanders D/ST',125],['TE','J.Bates',240],['RB','J.McNichols',300],['WR','2+ McLaurin',170],['RB','2+ Robinson',240],['QB','2+ Daniels',320],]},},
+	{'game_id':'g12','team_code':{'home':'KC','away':'BUF'},'team_name':{'home':'CHIEFS','away':'BILLS'},'ML':{'home':91,'away':109},'TD':{'home':[['TE','T.Kelce',23],['RB','K.Hunt',27],['WR','X.Worthy',34],['RB','I.Pacheco',35],['WR','M.Brown',45],['WR','D.Hopkins',70],['QB','P.Mahomes',90],['TE','N.Gray',100],['D/ST','Chiefs D/ST',125],['WR','J.Smith-Schuster',170],['WR','J.Watson',180],['TE','2+ Kelce',135],['RB','2+ Hunt',170],['WR','2+ Worthy',250],['RB','2+ Pacheco',260],],'away':[['QB','J.Allen',20],['RB','J.Cook',26],['WR','K.Shakir',40],['TE','D.Kincaid',52],['WR','K.Coleman',70],['WR','A.Cooper',95],['WR','M.Hollins',105],['TE','D.Knox',110],['D/ST','Bills D/ST',120],['RB','R.Davis',130],['RB','T.Johnson',130],['WR','C.Samuel',145],['QB','2+ Allen',115],['RB','2+ Cook',170],['WR','2+ Shakir',300],]},},
 ]
 
 const picksArchiveDict = {
@@ -44,5 +44,4 @@ const dbData = {
 }
 
 export default dbData;
-
 
