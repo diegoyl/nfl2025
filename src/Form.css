@@ -334,6 +334,14 @@
     line-height: calc(2.2em / 1  ); /* linked to tdOption */
 }
 
+.tdOption .mvpName {
+    width: 76%;
+}
+.tdOption .mvpPts {
+    width: 15%;
+}
+
+
 .tdNotes {
     font-family: Monofont;
     color: var(--cOfferWhite);
@@ -342,7 +350,7 @@
 }
 /* ACTIVE STUFF */
 .tdActive{
-    /* color: red; */
+    background-color: var(--cPurpHighlight);
     transition:  .4s ease-in-out;
     outline: var(--cPurpHighlight) solid 4px;
     border-radius: .1em;
@@ -360,11 +368,10 @@
 }
 
 
-
 #submitContainer {
     z-index: 51;
     background-color: var(--cPurpHighlight);
-    width: 100%;
+    width: 100vw;
     min-height: 100em;
     height: 100%;
     left: 0;
@@ -426,11 +433,14 @@
     /* border: green 1px solid; */
     margin-top: 23vh;
     margin-bottom: 200vh;
-    overflow: scroll;
+    /* overflow: scroll; */
     font-family: Monofont;
     font-weight: bold;
     letter-spacing: -.03em;
     color: var(--cPurp);
+    width: 100vw;
+    background-color: var(--cPurpHighlight);
+    /* height: 100em; */
 }
 
 

@@ -35,7 +35,7 @@ function ReviewRow2({game_picks}) {
 
     return (
         <div className="rrcView reviewRowContainer">
-            <div className={mlCodeClass+' reviewColumn fullCol'}>
+            <div className={mlCodeClass+' reviewColumn2 reviewColumn fullCol'}>
                 <p className="colName topText">
                     {mlName}
                 </p>
@@ -43,7 +43,7 @@ function ReviewRow2({game_picks}) {
                     +{mlPts}
                 </p>
             </div>
-            <div className='botCol botL reviewColumn'>
+            <div className='botCol botL reviewColumn2 reviewColumn'>
                 <p className="colName botText">
                     {tdhName}
                 </p>
@@ -51,7 +51,7 @@ function ReviewRow2({game_picks}) {
                     {tdhPts}+
                 </p>
             </div>
-            <div className='botCol botR reviewColumn'>
+            <div className='botCol botR reviewColumn2 reviewColumn'>
             <p className="colName botText">
                     {tdaName}
                 </p>

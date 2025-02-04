@@ -34,8 +34,8 @@ const logos = {
 
 function GameForm({game_data, selections, updateSelections, triggerFlash}) {
     var [activeML, setActiveML] = useState(selections[0])
-    var [activeTDHs, setActiveTDHs] = useState(selections[1])
-    var [activeTDAs, setActiveTDAs] = useState(selections[2])
+    var [activeTDH, setActiveTDH] = useState(selections[1])
+    var [activeTDA, setActiveTDA] = useState(selections[2])
     const homeLogo = logos[game_data["team_code"]["home"]]
     const awayLogo = logos[game_data["team_code"]["away"]]
 
@@ -55,40 +55,18 @@ function GameForm({game_data, selections, updateSelections, triggerFlash}) {
 
     }
     function handleTD(side,idx) {
-        console.log("\nTD - ",side," - ",idx)
+        console.log("TD - ",side," - ",idx)
         if (side === "home"){
-            let cur0 = activeTDHs[0]
-            let cur1 = activeTDHs[1]
-            if (cur0!=null) {
-                cur1 = cur0
-                cur0 = idx
-            } else {
-                cur0 = idx
-            }
-            setActiveTDHs([cur0,cur1])
-            console.log([cur0,cur1])
+            setActiveTDH(idx)
         } else if (side === "away"){
-            let cur0 = activeTDAs[0]
-            let cur1 = activeTDAs[1]
-            if (cur0!=null) {
-                cur1 = cur0
-                cur0 = idx
-            } else {
-                cur0 = idx
-            }
-            setActiveTDAs([cur0,cur1])
-            console.log([cur0,cur1])
+            setActiveTDA(idx)
         }
     }
 
     
     useEffect(() => {
-
-        console.log("updateSwelections: ")
-        console.log("/tinoputs: ",activeTDHs)
-        console.log("/tinoputs: ",activeTDAs)
-        updateSelections(game_data["game_id"], activeML, activeTDHs[0], activeTDAs[0],activeTDHs[1], activeTDAs[1]);
-    },[activeML, activeTDHs, activeTDAs]);
+        updateSelections(game_data["game_id"], activeML, activeTDH, activeTDA);
+    },[activeML, activeTDH, activeTDA]);
 
 
     return (
@@ -142,7 +120,7 @@ function GameForm({game_data, selections, updateSelections, triggerFlash}) {
 
 
             <div className="instruction">
-                Pick TWO Touchdown Scorers for each team <br></br>(4 total)
+                Pick a Touchdown Scorer for each team
             </div>
 
             <div id="tdContainer">
@@ -153,7 +131,7 @@ function GameForm({game_data, selections, updateSelections, triggerFlash}) {
                             <TDRow
                                 key={idx}
                                 idx={idx}
-                                activeTDidxs={activeTDHs}
+                                activeTDidx={activeTDH}
                                 data={data}
                                 side="home"
                                 team={game_data["team_code"]["home"]}
@@ -169,7 +147,7 @@ function GameForm({game_data, selections, updateSelections, triggerFlash}) {
                             <TDRow
                                 key={idx} 
                                 idx={idx}
-                                activeTDidxs={activeTDAs}
+                                activeTDidx={activeTDA}
                                 data={data}
                                 side="away"
                                 team={game_data["team_code"]["away"]}

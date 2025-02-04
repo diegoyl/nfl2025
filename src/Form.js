@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import './Form.css';
 // import Name from './Name.js';
 import GameForm from './GameForm.js';
+import GameFormColor from './GameFormColor.js';
+import GameFormMVP from './GameFormMVP.js';
 import SubmitForm from './SubmitForm.js';
 import Loading from './Loading.js';
 import PostSubmit from './PostSubmit.js';
@@ -68,7 +70,7 @@ function Form({gameDict, formActive}) {
         }
         let games_arr = []
         
-        for(let i=0; i < 15; i++){
+        for(let i=0; i < 20; i++){
             let g_idx = "g"+i
             if (selectionsDict[g_idx]) {
                 let ml_idx = selectionsDict[g_idx][0]
@@ -92,15 +94,30 @@ function Form({gameDict, formActive}) {
         setCurrentUser(user)
     }
 
-    function updateSelections(game_id, activeML, activeTDH, activeTDA){
+    function updateSelections(game_id, activeML, activeTDH, activeTDA, activeTDH2, activeTDA2){
         // update masyer dict
         let tempdict = selectionsDict
         tempdict[game_id][0] = activeML
-        tempdict[game_id][1] = activeTDH
-        tempdict[game_id][2] = activeTDA
+        tempdict[game_id][1][0] = activeTDH
+        tempdict[game_id][2][0] = activeTDA
+        tempdict[game_id][1][1] = activeTDH2
+        tempdict[game_id][2][1] = activeTDA2
+        console.log("TEMPDICTTTT: ",tempdict)
+        console.log("/tinoputs: ",activeTDH)
+        console.log("/tinoputs: ",activeTDA)
+        console.log("/tinoputs: ",activeTDH2)
+        console.log("/tinoputs: ",activeTDA2)
+
         setSelectionsDict(tempdict)
     }
 
+    function updateSelectionsMVPColor(game_id, activePick){
+        // update masyer dict
+        let tempdict = selectionsDict
+        tempdict[game_id][0] = activePick
+
+        setSelectionsDict(tempdict)
+    }
     function handleNextClick(direction) {
         let newPageNum = formPage + direction
         newPageNum = Math.max(newPageNum, 0)
@@ -161,22 +178,40 @@ function Form({gameDict, formActive}) {
                 <></>
             )}
 
-            {gameDict.map(function(game_data,idx) {
-                if (formPage === idx) {
-                    return (
+            {formPage === 0 ? ( 
                         <GameForm 
-                            key={idx} 
-                            game_data={game_data}
-                            selections={selectionsDict[game_data["game_id"]]}
+                            game_data={gameDict[0]}
+                            selections={selectionsDict[gameDict[0]["game_id"]]}
                             updateSelections={updateSelections}
                             triggerFlash={triggerFlash}
                         ></GameForm>
-                    )
-                }
-            })}
-            
-            
+            ): (
+                <></>
+            )}
 
+            {formPage === 1 ? ( 
+                        <GameFormMVP
+                            game_data={gameDict[1]}
+                            selections={selectionsDict[gameDict[1]["game_id"]]}
+                            updateSelectionsMVPColor={updateSelectionsMVPColor}
+                            triggerFlash={triggerFlash}
+                        ></GameFormMVP>
+            ): (
+                <></>
+            )}
+
+            {formPage === 2 ? ( 
+                        <GameFormColor
+                            game_data={gameDict[2]}
+                            selections={selectionsDict[gameDict[2]["game_id"]]}
+                            updateSelectionsMVPColor={updateSelectionsMVPColor}
+                            triggerFlash={triggerFlash}
+                        ></GameFormColor>
+            ): (
+                <></>
+            )}
+
+            
             <div className="navButtons">
 
                 <div id="leftNav" className="navButtonHalf">

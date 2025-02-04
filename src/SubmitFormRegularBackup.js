@@ -1,7 +1,6 @@
 import React, {useState} from 'react';            
 import './Form.css';
 import ReviewRow from './ReviewRow.js';
-import ReviewRow3 from './ReviewRow3.js';
 
 
 function SubmitForm({submitForm, setFinish, finish, selectionsDict, gameDict}) {
@@ -36,7 +35,7 @@ function SubmitForm({submitForm, setFinish, finish, selectionsDict, gameDict}) {
                 )}
 
 
-                {/* {Object.entries(selectionsDict).map(function(game_picks,idx) {
+                {Object.entries(selectionsDict).map(function(game_picks,idx) {
                     if (game_picks[0] != "user"){
                         return (
                             <ReviewRow 
@@ -45,24 +44,8 @@ function SubmitForm({submitForm, setFinish, finish, selectionsDict, gameDict}) {
                                 gameDict={gameDict}
                             ></ReviewRow>
                     )}
-                })} */}
+                })}
 
-                <ReviewRow 
-                    game_picks={["g13",selectionsDict["g13"]]}
-                    gameDict={gameDict}
-                ></ReviewRow>
-
-                <ReviewRow3 
-                    game_picks={["g14",selectionsDict["g14"]]}
-                    gameDict={gameDict}
-                    type={"MVP"}
-                ></ReviewRow3>
-
-                <ReviewRow3 
-                    game_picks={["g15",selectionsDict["g15"]]}
-                    gameDict={gameDict}
-                    type={"Color"}
-                ></ReviewRow3>
 
                 {/* <br></br><br></br><br></br><br></br><br></br>
                 <br></br><br></br><br></br><br></br><br></br>

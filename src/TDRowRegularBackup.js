@@ -1,14 +1,14 @@
 import './Form.css';
 
 
-function TDRow({idx, activeTDidxs, data, side, team, handleTD}) {
+function TDRow({idx, activeTDidx, data, side, team, handleTD}) {
     const pos = data[0]
     const name = data[1]
     const pts = data[2]
     console.log(team)
 
     let activeTD = false
-    if (activeTDidxs.includes(idx)) {
+    if (idx === activeTDidx) {
         activeTD = true
     }
 

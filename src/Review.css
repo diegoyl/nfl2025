@@ -8,6 +8,15 @@
     max-width: 500px;
 
 }
+
+.rr3 .botL {
+    border-radius: var(--revCorner) 0 0 var(--revCorner);
+}
+
+
+.rr3 .botR {
+    border-radius: 0 var(--revCorner) var(--revCorner) 0;
+}
 .reviewColumn {
     display: inline-block;
     width: 48%;
@@ -35,6 +44,35 @@
     height: 2em;
     vertical-align: bottom;
     
+}
+
+.reviewCol2 .topText {
+    /* outline: yellow .1px dashed; */
+    /* background-color: antiquewhite; */
+    display: inline-block;
+    /* padding: .2em 0; */
+    margin: 0;
+    font-size: 1em;
+    white-space: nowrap;
+    line-height: 2em;
+    height: 2em;
+    vertical-align: bottom;
+    
+}
+.reviewColumn .topText {
+    /* outline: yellow .1px dashed; */
+    /* background-color: antiquewhite; */
+    display: inline-block;
+    /* padding: .2em 0; */
+    margin: 0;
+    font-size: 2em;
+    white-space: nowrap;
+    line-height: 2em;
+    height: 2em;
+    vertical-align: bottom;
+}
+.reviewColumn2 .topText {
+    font-size: 1em;
 }
 .colName {
     width: 76%;
@@ -78,6 +116,14 @@
 }
 .botR {
     border-radius: 0 0 var(--revCorner) 0;
+    border-left: var(--cPurp) solid 1px;
+    margin-left: -1px;
+}
+.topL {
+    border-radius: var(--revCorner) 0 0 0;
+}
+.topR {
+    border-radius: 0 var(--revCorner) 0 0;
     border-left: var(--cPurp) solid 1px;
     margin-left: -1px;
 }
@@ -155,10 +201,24 @@
     outline: rgba(0, 0, 0, 0.3) 2px solid;
     border-radius: var(--revCorner);
 }
-.rrcView .fullCol {
-    /* background-color: var(--cPurpField);
-    border-bottom: var(--cPurp) 1px solid; */
-
+.rr1 .fullCol {
+    border-radius: var(--revCorner);
+    height: 4em;
+}
+.rr1 .fullColTD {
+    border-radius: 0;
+    font-size: 1em;
+    height: 2em;
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    /* margin: .2em 0; */
+}
+.rr1 .topRad {
+    border-radius: var(--revCorner) var(--revCorner) 0 0;
+}
+.rr1 .botRad {
+    border-radius: 0 0 var(--revCorner) var(--revCorner);
 }
 
 .corP {
