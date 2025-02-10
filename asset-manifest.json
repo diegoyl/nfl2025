@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nfl2025/static/css/main.a1a9a5d1.css",
+    "main.css": "/nfl2025/static/css/main.3f20e72c.css",
     "main.js": "/nfl2025/static/js/main.e98c609b.js",
     "static/media/MLexample.png": "/nfl2025/static/media/MLexample.2e43aaf34c6780a62cdc.png",
     "static/media/TDexample.png": "/nfl2025/static/media/TDexample.8a6de417d04423f94f2b.png",
@@ -22,11 +22,11 @@
     "static/media/PIT.jpg": "/nfl2025/static/media/PIT.8f6d9dd5d34cc3028e55.jpg",
     "static/media/GB.jpg": "/nfl2025/static/media/GB.c3d1dbb79bf25133a0ac.jpg",
     "index.html": "/nfl2025/index.html",
-    "main.a1a9a5d1.css.map": "/nfl2025/static/css/main.a1a9a5d1.css.map",
+    "main.3f20e72c.css.map": "/nfl2025/static/css/main.3f20e72c.css.map",
     "main.e98c609b.js.map": "/nfl2025/static/js/main.e98c609b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1a9a5d1.css",
+    "static/css/main.3f20e72c.css",
     "static/js/main.e98c609b.js"
   ]
 }
