@@ -1,6 +1,6 @@
 .standingsTableContainer {
     /* outline: red 2px dashed; */
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     max-width: 400px;
 }
@@ -51,6 +51,40 @@
     color: var(--cPurpHighlight);
     font-size: 1em;
 }
+
+
+#sRow1 {
+    background-color: transparent;
+    outline: 3px rgb(222, 187, 46) solid;
+    border-radius: 2px;
+    box-shadow: 0 0 1em rgb(252, 255, 105);
+    margin: .5em 0 1.5em;
+    background-color: var(--cPurpField);
+}
 #sRow1 .sCol{
-    background-color: var(--cPurpHighlight);
+}
+#sRow1 p {
+    color: rgb(222, 187, 46);
+    /* inner-shadow: gold 10px 10px 10px; */
+    text-shadow: 0 0 .2em rgba(251, 255, 0, 0.6);
+    padding: .6em 0;
+    font-weight: bolder;
+
+}
+
+.mostTD {
+    color: rgb(222, 187, 46);
+    text-shadow: 0 0 .2em rgba(251, 255, 0, 0.6);
+    font-weight: bolder;
+}
+.mostTDtext {
+    color: rgb(222, 187, 46);
+    text-shadow: 0 0 .2em rgba(251, 255, 0, 0.6);
+    font-weight: bolder;
+    font-family: Monofont;
+    font-size: .5em;
+    line-height: 2em;
+    vertical-align: middle;
+    margin-left: 10px;
+
 }

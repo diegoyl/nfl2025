@@ -24,7 +24,7 @@ function Standings({standingsArr}) {
                     </p>
                 </div>
 
-                <div id="sRow1" className='sRow'>
+                <div id="sRow1" className='sRow winner'>
                     <p className='sCol sColName'>
                         {standingsArr[0]["name"]}
                     </p>
@@ -75,6 +75,7 @@ function Standings({standingsArr}) {
                 <div id="sRow4" className='sRow'>
                     <p className='sCol sColName'>
                         {standingsArr[3]["name"]}
+                        <span className='mostTDtext'>Most TD Pts</span>
                     </p>
                     <p className='sCol sColPts'>
                         {standingsArr[3]["pts"]}
@@ -82,7 +83,7 @@ function Standings({standingsArr}) {
                     <p className='sCol sColWin'>
                         {standingsArr[3]["win"]}
                     </p>
-                    <p className='sCol sColTd'>
+                    <p className='sCol sColTd mostTD'>
                         {standingsArr[3]["td"]}
                     </p>
                 </div>

@@ -72,7 +72,7 @@ function App() {
 
       <Standings standingsArr={standingsArr}></Standings>
 
-      <CurrentGameTable cur_game_data={gameDict[curGameIdxRound]} curGameIdx={curGameIdx} picksArchiveDict={picksArchiveDict}></CurrentGameTable>
+      {/* <CurrentGameTable cur_game_data={gameDict[curGameIdxRound]} curGameIdx={curGameIdx} picksArchiveDict={picksArchiveDict}></CurrentGameTable> */}
 
 
       
