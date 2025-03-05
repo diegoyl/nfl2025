@@ -11,7 +11,7 @@ import dbData from './dbData.js';
 const defaultSD = dbData["defaultSD"]
 
 
-function Form({gameDict, formActive}) {
+function Form({gameDict, formActive, handleFormbackClick}) {
     // var [gameDict, setGameDict] = useState(gameDict)
     var [formPage, setFormPage] = useState(-1)
     var [selectionsDict, setSelectionsDict] = useState(defaultSD)
@@ -34,30 +34,9 @@ function Form({gameDict, formActive}) {
     function sendData() {
         setLoading(true)
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxAPuiD5WJQZDczPl0Swn51S_Heals6OzN1iiSGCqrAeVJeHpxO_-icXhun5DJnuIFCoQ/exec'
-
-        console.log("\n\n* POST REQUEST")
-        console.log("\t\t sending data to sheets.....\n\n...")
-        console.log(selectionsDict)
-
-        let sd_packet = sdToPacket(selectionsDict)
-        console.log("stringified: ",JSON.stringify(sd_packet))
-        // const user_data = {
-        //     "user":"andres",
-        //     "games": [
-        //          "1,3,4",
-        //          "0,5,2",
-        //      ]
-        // }
-
-        fetch( scriptURL , {
-            method: "Post",
-            body: JSON.stringify(sd_packet)
-        })
-        // .then(response => alert("Your picks were submitted :)\n\nTo change your picks, fill out the form again" ))
-        .then(() => { setDoneSubmitting(true) })
-        // .then(() => { window.location.reload(); })
-        .catch(error => alert(":( ERROR: your picks were not submitted, tell Diego to fix the bug..." ))
+        setTimeout(() => {
+            setDoneSubmitting(true)
+        }, 2000)
 
 
     }
@@ -134,6 +113,10 @@ function Form({gameDict, formActive}) {
     
     return (
         <div id="formScroller" className="formContainer">
+
+                <button id="formback" class="viewHomeButton" onClick={() => handleFormbackClick()} >
+                    HOME
+                </button>
             <div id="flash1" 
                 className={flashActive[0] ? flashActive[1]+" flashActive flash":"flash"}>
             </div>

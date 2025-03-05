@@ -27,16 +27,16 @@ function UserDropdown({updateUser, formActive}) {
                 
                 <p className='helpInstruction'>On the next page, click the <span className="purpleQ">? </span>in the top-right corner for help or to read the rules</p>
                 <button onClick={toggleDropdown} >
-                    ¿Quien Eres?
+                    Who Are You?
                 </button>
                 {true && (
                     <ul className="dropdown-menu">
-                    <li onClick={() => handleItemClick('ANA PAULA')}>ANA PAULA</li>
-                    <li onClick={() => handleItemClick('ANDRES')}>ANDRES</li>
-                    <li onClick={() => handleItemClick('FABIAN')}>FABIAN</li>
-                    <li onClick={() => handleItemClick('DIEGO')}>DIEGO</li>
-                    <li onClick={() => handleItemClick('MAMI')}>MAMI</li>
-                    <li onClick={() => handleItemClick('PAPI')}>PAPI</li>
+                    <li onClick={() => handleItemClick('PLAYER1')}>PLAYER 1</li>
+                    <li onClick={() => handleItemClick('PLAYER2')}>PLAYER 2</li>
+                    <li onClick={() => handleItemClick('PLAYER3')}>PLAYER 3</li>
+                    <li onClick={() => handleItemClick('PLAYER4')}>PLAYER 4</li>
+                    <li onClick={() => handleItemClick('PLAYER5')}>PLAYER 5</li>
+                    <li onClick={() => handleItemClick('PLAYER6')}>PLAYER 6</li>
                     </ul>
                 )}
             </div>

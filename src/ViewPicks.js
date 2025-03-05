@@ -6,7 +6,7 @@ import './Form.css';
 
 function ViewPicks({picksArchiveDict, handleVPClick}) {
     const [isOpen, setIsOpen] = useState(false);
-    const [curViewUser, setCurViewUser] = useState("ANA PAULA");
+    const [curViewUser, setCurViewUser] = useState("PLAYER4");
     const [curUserPicks, setCurUserPicks] = useState(picksArchiveDict[curViewUser]);
     console.log("\n\npicksArchiveDict: ", picksArchiveDict)
     console.log("\ncurUserPicks: ", curUserPicks)
@@ -33,12 +33,12 @@ function ViewPicks({picksArchiveDict, handleVPClick}) {
                 {isOpen && (
                     <ul className="dropdown-menu ">
                     <div className="shadowDiv"></div>
-                    <li onClick={() => handleViewItemClick('ANA PAULA')}>ANA PAULA</li>
-                    <li onClick={() => handleViewItemClick('ANDRES')}>ANDRES</li>
-                    <li onClick={() => handleViewItemClick('FABIAN')}>FABIAN</li>
-                    <li onClick={() => handleViewItemClick('DIEGO')}>DIEGO</li>
-                    <li onClick={() => handleViewItemClick('MAMI')}>MAMI</li>
-                    <li onClick={() => handleViewItemClick('PAPI')}>PAPI</li>
+                    <li onClick={() => handleViewItemClick('PLAYER1')}>PLAYER 1</li>
+                    <li onClick={() => handleViewItemClick('PLAYER2')}>PLAYER 2</li>
+                    <li onClick={() => handleViewItemClick('PLAYER3')}>PLAYER 3</li>
+                    <li onClick={() => handleViewItemClick('PLAYER4')}>PLAYER 4</li>
+                    <li onClick={() => handleViewItemClick('PLAYER5')}>PLAYER 5</li>
+                    <li onClick={() => handleViewItemClick('PLAYER6')}>PLAYER 6</li>
                     
                     </ul>
                 )}

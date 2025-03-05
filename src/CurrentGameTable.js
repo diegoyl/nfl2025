@@ -6,8 +6,8 @@ function CurrentGameTable({cur_game_data, curGameIdx, picksArchiveDict}) {
 
     // do stuff with props
     console.log("1. cur_game_data: ", cur_game_data)
-    // console.log("2. 'Diego' : ", picksArchiveDict["DIEGO"])
-    // console.log("3. '[0]]' : ", picksArchiveDict["DIEGO"][0])
+
+
 
     const homeCode = cur_game_data["team_code"]["home"]
     const homeName = cur_game_data["team_name"]["home"]
@@ -32,50 +32,50 @@ function CurrentGameTable({cur_game_data, curGameIdx, picksArchiveDict}) {
 
             <div className="curPicksRow">
                 <div className="curPicksCol cpLeft">
-                    <p className='roundTitle curRT'>A</p>
+                    <p className='roundTitle curRT'>P1</p>
                 </div>
                 <div className="curPicksCol cpRight">
-                    <ReviewRow2 game_picks={[0,picksArchiveDict["ANDRES"][curGameIdx]]}></ReviewRow2>
+                    <ReviewRow2 game_picks={[0,picksArchiveDict["PLAYER1"][curGameIdx]]}></ReviewRow2>
                 </div>
             </div>
             <div className="curPicksRow">
                 <div className="curPicksCol cpLeft">
-                    <p className='roundTitle curRT'>AP</p>
+                    <p className='roundTitle curRT'>P2</p>
                 </div>
                 <div className="curPicksCol cpRight">
-                    <ReviewRow2 game_picks={[0,picksArchiveDict["ANA PAULA"][curGameIdx]]}></ReviewRow2>
+                    <ReviewRow2 game_picks={[0,picksArchiveDict["PLAYER2"][curGameIdx]]}></ReviewRow2>
                 </div>
             </div>
             <div className="curPicksRow">
                 <div className="curPicksCol cpLeft">
-                    <p className='roundTitle curRT'>F</p>
+                    <p className='roundTitle curRT'>P3</p>
                 </div>
                 <div className="curPicksCol cpRight">
-                    <ReviewRow2 game_picks={[0,picksArchiveDict["FABIAN"][curGameIdx]]}></ReviewRow2>
+                    <ReviewRow2 game_picks={[0,picksArchiveDict["PLAYER3"][curGameIdx]]}></ReviewRow2>
                 </div>
             </div>
             <div className="curPicksRow">
                 <div className="curPicksCol cpLeft">
-                    <p className='roundTitle curRT'>D</p>
+                    <p className='roundTitle curRT'>P4</p>
                 </div>
                 <div className="curPicksCol cpRight">
-                    <ReviewRow2 game_picks={[0,picksArchiveDict["DIEGO"][curGameIdx]]}></ReviewRow2>
+                    <ReviewRow2 game_picks={[0,picksArchiveDict["PLAYER4"][curGameIdx]]}></ReviewRow2>
                 </div>
             </div>
             <div className="curPicksRow">
                 <div className="curPicksCol cpLeft">
-                    <p className='roundTitle curRT'>M</p>
+                    <p className='roundTitle curRT'>P5</p>
                 </div>
                 <div className="curPicksCol cpRight">
-                    <ReviewRow2 game_picks={[0,picksArchiveDict["MAMI"][curGameIdx]]}></ReviewRow2>
+                    <ReviewRow2 game_picks={[0,picksArchiveDict["PLAYER5"][curGameIdx]]}></ReviewRow2>
                 </div>
             </div>
             <div className="curPicksRow">
                 <div className="curPicksCol cpLeft">
-                    <p className='roundTitle curRT'>P</p>
+                    <p className='roundTitle curRT'>P6</p>
                 </div>
                 <div className="curPicksCol cpRight">
-                    <ReviewRow2 game_picks={[0,picksArchiveDict["PAPI"][curGameIdx]]}></ReviewRow2>
+                    <ReviewRow2 game_picks={[0,picksArchiveDict["PLAYER6"][curGameIdx]]}></ReviewRow2>
                 </div>
             </div>
 

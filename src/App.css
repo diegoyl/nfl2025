@@ -133,6 +133,7 @@ button {
   animation-iteration-count: 1;
 }
 
+
 @keyframes loadFlash {
     30% {
         opacity: 1;

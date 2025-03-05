@@ -752,6 +752,12 @@
     text-align: center;
   }
 
+  #formback {
+    top: 9px;
+    left: 10px;
+    font-size: 1.2em;
+    padding: .6em .5em;
+  }
 
 
 @media (hover: hover) {

@@ -26,6 +26,9 @@ function App() {
   function handleVPClick(state) {
     setViewActive(state)
   }
+  function handleFormbackClick() {
+    setFormActive(false)
+  }
   
 
   const gameDict = dbData["gameDict"]
@@ -44,7 +47,7 @@ function App() {
     <div className="App">
       
       <p id="title">
-        QUINIELA 2025
+        PLAYOFFS '25
       </p>
 
       <div id="loadFormFlash" 
@@ -80,7 +83,7 @@ function App() {
 
       
       {formActive ? (
-        <Form gameDict={gameDict}></Form>
+        <Form gameDict={gameDict} handleFormbackClick={handleFormbackClick}></Form>
       ) : (
         <></>
       )}

@@ -3,7 +3,6 @@ import './Standings.css';
 
 
 function Standings({standingsArr}) {
-    // {'name':'ANA PAULA','pts':'0','win':'0','td':'0'},
 
     return (
         <div className="">
